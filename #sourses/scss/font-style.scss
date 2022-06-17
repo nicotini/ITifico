@@ -26,6 +26,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+._icon-facebook:before {
+  content: "\e90a";
+}
+._icon-ln:before {
+  content: "\e90b";
+}
+._icon-twitter:before {
+  content: "\e90c";
+}
 ._icon-arrow-down:before {
   content: "\e900";
 }
