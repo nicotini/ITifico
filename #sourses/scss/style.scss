@@ -18,6 +18,7 @@ $Gray1: #A7BBD1;
 $Border: #E2E7EB;
 $Red: #E36F59;
 $redLight: #FBA594;
+$White: #fff;
 //variables end
 
 html{
@@ -69,5 +70,9 @@ img{
 }
 //header 
 @import "header";
+// intro
+.intro {
+    padding-top: 80px;
+}
 
 

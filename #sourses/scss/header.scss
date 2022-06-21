@@ -2,6 +2,18 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 21px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-transition: .2s linear;
+    -o-transition: .2s linear;
+    transition: .2s linear;
+    /* padding-bottom: 15px; */
+    z-index: 999;
+}
+.header__active {
+    background: $White;
 }
 .header__wrapper {
     display: flex;
@@ -48,7 +60,7 @@
 }
 .btn__lang:active, .btn__lang:focus, .btn__lang:hover{
     background-color: $Red;
-    color: #fff;
+    color: $White;
 }
 .btn__lang-eng {
     border-radius: 0 6px 6px 0;
@@ -76,7 +88,7 @@
     width: 70%;
     position: absolute;
     height: 2px;
-    background: #fff;
+    background: $White;
     left: 5px;
     
 }
@@ -146,7 +158,7 @@
         display: block;
         width: 70%;
         height: 2px;
-        background-color: #fff;
+        background-color: $White;
         position: absolute;
         top: 50%;
         left: 5px; 
@@ -164,7 +176,7 @@
     .header__nav {
         height: 380px;
         width: 100%;
-        background-color: #fff;
+        background-color: $White;
         position: fixed;
         left: 0;
         top: 0;
@@ -206,14 +218,16 @@
     .header__item:focus,
     .header__item:active{
         background-color: $Red;
-        color: #fff;
+        color: $White;
     }
     /* .header__item:last-child {
         margin-bottom: 0;
     } */
+    .header__lang {
+        width: auto;
+    }
     .btn__lang {
         order: 3;
-        z-index: 11;
-        
+        z-index: 11; 
     }
 }

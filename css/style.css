@@ -271,6 +271,18 @@ img {
   font-size: 16px;
   font-weight: 600;
   line-height: 21px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  /* padding-bottom: 15px; */
+  z-index: 999;
+}
+
+.header__active {
+  background: #fff;
 }
 
 .header__wrapper {
@@ -528,10 +540,17 @@ img {
   /* .header__item:last-child {
       margin-bottom: 0;
   } */
+  .header__lang {
+    width: auto;
+  }
+
   .btn__lang {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
     z-index: 11;
   }
+}
+.intro {
+  padding-top: 80px;
 }
