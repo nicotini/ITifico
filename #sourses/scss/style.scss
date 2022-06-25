@@ -19,6 +19,9 @@ $Border: #E2E7EB;
 $Red: #E36F59;
 $redLight: #FBA594;
 $White: #fff;
+$Green_light:#92E3A9;
+$Powder: #FFD4BC;
+$Purple: #BEC5FF;
 //variables end
 
 html{
@@ -63,6 +66,19 @@ img{
     font-weight: 700;
     line-height: 50px;
 
+}
+.blog__card-title {
+    font-family: 'SegoeUI-Bold';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 15px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+.blog__card-title:hover {
+    color: $Red;
+    text-decoration: underline;
 }
 .btn-red {
     cursor: pointer;
@@ -109,6 +125,7 @@ img{
 .intro {
     padding-top: 100px;
     position: relative;
+    margin-bottom: 123px;
    
     .wrapper__intro {
         display: flex;
@@ -181,9 +198,50 @@ img{
         margin-left: 5px;
     }
 }
+//article-slider
+.articles {
+    margin-bottom: 130px;
+}
+.title__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.articles-title {
+    position: relative;
+}
+.articles-title::after {
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 111px;
+    background-color: $Red;
+    opacity: 50%;
+    bottom: 10%;
+    left:-5%;
+}
+.btn-articles {
+    padding: 15px 30px;
+}
+.slider__articles {
+    height: 556px;
+   
+}
+.slider__wrapper {
+    transition: transform 0.5s;
+    will-change: transition;
+}
+.blog__card-wrapper {
+    
+    box-shadow: 0px 3px 23px 0px #00000012;
+    border-radius: 8px;
+    
+}
+@import "blog_item";
 
-
-
+//slider navigation
+@import "slider_navigation";
 
 //footer
 @import "footer";

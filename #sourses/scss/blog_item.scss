@@ -1,0 +1,61 @@
+.blog__card-pic {
+    width:100%;
+    height: 220px;
+    overflow: hidden;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.slider__article-img {
+    width:100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+   object-fit:cover;
+}
+.blog__card-short-info {
+    padding: 15px 15px 18px 15px;
+}
+.blog__card-tags {
+    margin-bottom: 15px;
+}
+.article-tag  {
+    padding: 5px 10px;
+}
+.article-tag__green {
+    background-color: $Green_light;
+}
+.article-tag__blue-light {
+    background-color: $Purple;
+}
+.article-tag__powder {
+    background-color: $Powder;
+}
+.blog__card-short-desc {
+    margin-bottom: 22px;
+}
+.blog__card-content {
+    position: relative;
+    margin-bottom: 38px;
+}
+.blog__card-content::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 95%;
+    background-color: $Border;
+    bottom: -22px;
+    left: 0;
+    text-align: center;
+    
+}
+.blog__card-info {
+    display: flex;
+    justify-content: space-between;
+}
+._icon-calendar,
+._icon-eye {
+    color: $Border;
+    margin-right: 10px;
+}

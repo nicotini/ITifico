@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITifico</title>
+    <link rel="stylesheet" href="swiper@8.2.2/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -39,9 +40,29 @@
                 </div>
             </div>
         </section>
+        <section class="articles">
+            <div class="wrapper">
+                <div class="title__section">
+                    <h2 class="articles-title title">Articles</h2>
+                    <button class="btn-articles btn-outline">More articles</button>
+                </div>
+                <div class="slider__articles swiper">
+                    <div class="slider__wrapper swiper-wrapper">
+                    <!-- @import "blog-item.html" -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="button-next _icon-arrow-left"></div>
+                    <div class="button-prev _icon-arrow-right"></div>
+                    
+                </div>
+            </div>
+        </section>
     </main>
     
 <!-- @import "footer.html" -->
+<script src="swiper@8.2.2/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

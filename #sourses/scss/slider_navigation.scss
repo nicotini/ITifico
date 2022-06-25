@@ -1,0 +1,70 @@
+.slider__articles {
+    position: relative;
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            height: 8px;
+            width: 8px;
+            background-color: $Red;
+           
+        }
+        .swiper-pagination-bullet-active {
+            width: 14px;
+            height: 14px;
+            border: 1px solid $Red;
+            background-color: transparent;
+            position: relative;
+            top: 4px;
+        }
+        .swiper-pagination-bullet-active::after {
+            content: '';
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            background-color: $Red;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+        }
+        
+    }
+    .button-prev,
+    .button-next {
+        position: absolute;
+        bottom: 25px;
+        color: $Black;
+        z-index: 10;
+        cursor: pointer;
+        width: 40px;
+        height: 12px;
+    }
+    .button-prev {
+        right: 26px;
+    }
+    .button-prev:hover,
+    .button-prev:focus,
+    .button-next:hover,
+    .button-next:focus {
+        color: $Red;
+    }
+    .button-prev:hover::after,
+    .button-next:hover::after {
+        content: '';
+        position: absolute;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        border: 1px solid $Red;
+        bottom: -22.5px;
+      
+    }
+    .button-prev:hover::after {
+        right: -25px;
+    }
+
+    .button-next {
+        left: 23px;
+    }
+    .button-next:hover::after {
+        right: 8px;
+    }
+}
