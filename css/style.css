@@ -721,19 +721,24 @@ img {
   margin-bottom: 40px;
 }
 
-.articles-title {
+.rectangle {
   position: relative;
 }
 
-.articles-title::after {
+.rectangle::before {
   content: "";
   position: absolute;
+  border-radius: 4px;
+  z-index: -1;
   height: 16px;
-  width: 111px;
+  width: 100%;
   background-color: #E36F59;
   opacity: 50%;
   bottom: 10%;
-  left: -5%;
+}
+
+.rectangle-left::before {
+  left: -10%;
 }
 
 .btn-articles {
@@ -792,6 +797,7 @@ img {
 
 .article-tag {
   padding: 5px 10px;
+  border-radius: 2px;
 }
 
 .article-tag__green {
