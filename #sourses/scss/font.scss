@@ -41,8 +41,8 @@
         font-family: 'Bitter-Regular';
         font-style: normal;
         font-weight: normal;
-        src: local('Bitter-Regular'), url('../../fonts/Bitter-Regular.woff2') format('woff2');
-        src: local('Bitter-Regular'), url('../../fonts/Bitter-Regular.woff') format('woff');
+        src: local('Bitter-Regular'), url('../fonts/Bitter-Regular.woff2') format('woff2');
+        src: local('Bitter-Regular'), url('../fonts/Bitter-Regular.woff') format('woff');
      }
      @font-face {
         font-family: 'Consolas';

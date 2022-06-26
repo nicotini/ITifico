@@ -76,6 +76,12 @@ img{
     transition: 0.5s all;
     cursor: pointer;
 }
+.title_h4 {
+    font-family: "SegoeUI-Bold";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+}
 .blog__card-title:hover {
     color: $Red;
     text-decoration: underline;
@@ -156,7 +162,6 @@ img{
   }
 }
 .background__text {
-    z-index: 10;
     position: absolute;
     font-family: 'Bitter-Bold';
     font-size: 100px;
@@ -165,7 +170,13 @@ img{
     text-transform: uppercase;
     color: $White;
     opacity: 0.6;
+   
+}
+.background__text-intro {
     text-shadow: -1px 0 $Border, 0 1px $Border, 1px 0 $Border, 0 -1px $Border;
+    color: $White;
+    z-index: 10;
+   
 }
 .background__text-first {
     left: 22%;
@@ -240,6 +251,68 @@ img{
     
     box-shadow: 0px 3px 23px 0px #00000012;
     border-radius: 8px;
+    
+}
+//slider__courses
+.courses {
+    margin-bottom: 130px;
+}
+.slider__courses {
+    height: 370px;
+}
+.courses_item {
+    position: relative;
+}
+.courses_item-wrapper {
+   /*  background-color: #CCC1F6; */
+    border-radius: 8px;
+    padding: 30px 25px 25px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.courses_item-first {
+    background-color: #CCC1F6;
+}
+.color-first {
+ color: #CCC1F6;
+}
+.courses_item-sec {
+    background-color: #E7EEF3;
+}
+.color-sec {
+    color: #E7EEF3;
+}
+.courses_item-third {
+    background-color: $Powder;
+}
+.color-third {
+    color:$Powder;
+}
+.courses_item-title {
+    margin-bottom: 20px;
+}
+.courses_item-desc {
+    margin-bottom: 10px;
+}
+.courses_item-more {
+    cursor: pointer;
+    font-family: 'Bitter-Regular';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    align-self: flex-end;
+}
+.courses_item-more:hover,
+.courses_item-more:active,
+.courses_item-more:focus {
+    text-decoration: underline;
+}
+
+.courses_item-text {
+    right: 20px;
+    top: -20px;
+    /* color: #CCC1F6; */
+    text-shadow: -1px 0 $White, 0 1px $White, 1px 0 $White, 0 -1px $White;
     
 }
 @import "blog_item";
