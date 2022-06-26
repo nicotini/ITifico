@@ -208,18 +208,22 @@ img{
     justify-content: space-between;
     margin-bottom: 40px;
 }
-.articles-title {
+.rectangle {
     position: relative;
 }
-.articles-title::after {
+.rectangle::before {
     content: '';
     position: absolute;
+    border-radius: 4px;
+    z-index: -1;
     height: 16px;
-    width: 111px;
+    width: 100%;
     background-color: $Red;
-    opacity: 50%;
+    opacity: 50%; 
     bottom: 10%;
-    left:-5%;
+}
+.rectangle-left::before {
+    left: -10%;
 }
 .btn-articles {
     padding: 15px 30px;
