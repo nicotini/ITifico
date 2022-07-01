@@ -755,6 +755,7 @@ img {
   background-color: #E36F59;
   opacity: 50%;
   bottom: 10%;
+  z-index: 10;
 }
 
 .rectangle-left::before {
@@ -1175,6 +1176,7 @@ img {
   width: 20%;
   padding: 20px 60px;
   position: relative;
+  text-align: center;
 }
 .newsletter_btn::after {
   content: "\e905";
