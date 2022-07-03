@@ -1,0 +1,104 @@
+.blog {
+    margin-bottom: 100px;
+}
+.background__text-blog {
+    right: 60px;
+    top: 80px;
+}
+
+.blog_navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tags_blog {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tag_item {
+    margin-bottom: 10px;
+    display: block;
+    margin-right: 10px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.select_wrapper {
+    position: relative;
+    &::after {
+        content:'';
+        background-color: $Border;
+       position: absolute;
+         top: 40%;
+        right: 5%;
+        background: url(../img/svg/arrow-down-sign-to-navigate.svg) no-repeat right center;
+       pointer-events: none;
+       width: 10px;
+       height: 10px;
+      
+       cursor: pointer;
+    }
+    
+    select {
+        appearance: none;
+        -webkit-appearance: none;
+        font-family: inherit;
+        font-size: 1rem;
+        border: 1px solid $Border;
+        padding: 9px 129px 11px 16px;
+        border-radius: 8px;
+    }
+}
+
+.title_blog {
+ margin-bottom: 20px;
+}
+.blog_articles {
+    padding-bottom: 100px;
+    
+}
+.blog_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 23px;
+    margin: 70px 0 70px 0;
+}
+.background_blog {
+    img {
+        position: absolute;
+        right: 0;
+        bottom:0;
+    }
+}
+//blog paination
+.blog_pagination {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+.blog_pagination-list {
+    display: flex;
+    .pagination_item {
+        margin-right: 10px;
+        padding: 10px 15px;
+        border: 2px solid $Border;
+        border-radius: 8px;
+        color: $Black;
+        &:hover {
+            border: 2px solid $Red;
+            color: $Red
+        }   
+    }
+    .pagination_item.active {
+        background-color: $Red;
+        border: 2px solid $Red;
+        .pagination_item-link {
+            color: $White;
+        }
+    }
+}
