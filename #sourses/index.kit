@@ -9,246 +9,248 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="overlay"></div>
-    <!-- @import "header.html" -->
-    <main>
-        <section class="intro">
-            <div class="backgroud-intro">
-                <img src="img/svg/intro-figure.svg" alt="ITifico">
-            </div>
-            <div class="background__text background__text-intro background__text-first"><span>ITifico</span></div>
-            <div class="background__text background__text-intro background__text-sec"><span>[/]</span></div>
-            <div class="background__text background__text-intro background__text-third"><span>{/}</span></div>
-            <div class="wrapper">
-                <div class="wrapper__intro">
-                    <div class="intro__content">
-                        <h1 class="intro__title main__title"><span>ITifico</span>  - platform for learning your code</h1>
-                        <p class="intro__desc">
-                            Курси для початківців і просунутих програмістів, а також цікаві статті. 
-                            Приєднуйтесь і дозвольте нам підтримати вас у вашій кар’єрі
+    <div class="page">
+        <div class="overlay"></div>
+        <!-- @import "header.html" -->
+        <main>
+            <section class="intro content-section">
+                <div class="backgroud-intro">
+                    <img src="img/svg/intro-figure.svg" alt="ITifico">
+                </div>
+                <div class="background__text background__text-intro background__text-first"><span>ITifico</span></div>
+                <div class="background__text background__text-intro background__text-sec"><span>[/]</span></div>
+                <div class="background__text background__text-intro background__text-third"><span>{/}</span></div>
+                <div class="wrapper">
+                    <div class="wrapper__intro">
+                        <div class="intro__content">
+                            <h1 class="intro__title main__title"><span>ITifico</span>  - platform for learning your code</h1>
+                            <p class="intro__desc">
+                                Курси для початківців і просунутих програмістів, а також цікаві статті. 
+                                Приєднуйтесь і дозвольте нам підтримати вас у вашій кар’єрі
+                            </p>
+                            <button class="intro__button btn-red ">Call to action <span class="_icon-arrow-right"></span></button>
+                            <!-- <div class="intro__to-bottom">
+                                <img src="img/svg/mouse.svg" alt="ITifico-to-next">
+                                    <span>Гортай вниз</span> 
+                            </div> -->
+                        </div>
+                        <div class="intro__image">
+                            <img src="img/intro-img.png" alt="ITifico" >
+                            <button class="intro__button btn-red ">Call to action </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="articles">
+                <div class="background_articles">
+                    <img src="img/svg/second-section-figure.svg" alt="">
+                </div>
+                <div class="wrapper">
+                    <div class="title__section">
+                        <h2 class="title"><span class="rectangle rectangle-left">Arti</span>cles</h2>
+                        <button class="btn-articles btn-outline">More articles</button>
+                    </div>
+                    <div class="slider__articles slider__slider swiper">
+                        <div class="slider__wrapper swiper-wrapper">
+                        <!-- @import "blog-item.html" -->
+                        </div>
+                        <div class="swiper-pagination"></div>
+
+                        <div class="button-next _icon-arrow-left"></div>
+                        <div class="button-prev _icon-arrow-right"></div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="courses">
+                <div class="background_courses">
+                    <img class="background_courses-left" src="img/svg/background-courses-left.svg" alt="">
+                    <img class="background_courses-right" src="img/svg/background-courses-right.svg" alt="">
+                </div>
+                <div class="wrapper">
+                    <div class="title__section">
+                        <h2 class="title title_courses"><span class="rectangle rectangle-left">Cour</span>ses</h2>
+                        <button class="btn-articles btn-outline">More courses</button>
+                    </div>
+                    <div class="slider__courses slider__slider swiper">
+                        <div class="slider__wrapper swiper-wrapper">
+                            <div class="courses_item swiper-slide">
+                                <div class="courses_item-wrapper courses_item-first">
+                                    <div class="courses_item-text background__text color-first">Hero</div>
+                                    <div class="courses_item-icon">
+                                        <img src="img/svg/c-dash.svg" alt="ITifico-courses">
+                                    </div>
+                                    <h4 class="courses_item-title title_h4">C# від нуля до героя</h4>
+                                    <p class="courses_item-desc">
+                                        Навчаємо веб програмування, створення ігор та розробки ПЗ.
+                                        Проходьте курси, вирішуйте завдання, переглядайте новини та 
+                                        ставайте справжніми майстрами програмування!
+                                    </p>
+                                    <div class="courses_item-more">
+                                        More...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses_item swiper-slide">
+                                <div class="courses_item-wrapper courses_item-sec">
+                                    <div class="courses_item-text  background__text color-sec">new</div>
+                                    <div class="courses_item-icon">
+                                        <img src="img/svg/new-course.svg" alt="ITifico-courses">
+                                    </div>
+                                    <h4 class="courses_item-title title_h4">C# від нуля до героя</h4>
+                                    <p class="courses_item-desc">
+                                        Навчаємо веб програмування, створення ігор та розробки ПЗ.
+                                        Проходьте курси, вирішуйте завдання, переглядайте новини та 
+                                        ставайте справжніми майстрами програмування!
+                                    </p>
+                                    <div class="courses_item-more">
+                                        More...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses_item swiper-slide">
+                                <div class="courses_item-wrapper courses_item-third">
+                                    <div class="courses_item-text background__text color-third">IT</div>
+                                    <div class="courses_item-icon">
+                                        <img src="img/svg/c-dash.svg" alt="ITifico-courses">
+                                    </div>
+                                    <h4 class="courses_item-title title_h4">C# від нуля до героя</h4>
+                                    <p class="courses_item-desc">
+                                        Навчаємо веб програмування, створення ігор та розробки ПЗ.
+                                        Проходьте курси, вирішуйте завдання, переглядайте новини та 
+                                        ставайте справжніми майстрами програмування!
+                                    </p>
+                                    <div class="courses_item-more">
+                                        More...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses_item swiper-slide">
+                                <div class="courses_item-wrapper courses_item-first">
+                                    <div class="courses_item-text background__text color-first">Hero</div>
+                                    <div class="courses_item-icon">
+                                        <img src="img/svg/new-course.svg" alt="ITifico-courses">
+                                    </div>
+                                    <h4 class="courses_item-title title_h4">C# від нуля до героя</h4>
+                                    <p class="courses_item-desc">
+                                        Навчаємо веб програмування, створення ігор та розробки ПЗ.
+                                        Проходьте курси, вирішуйте завдання, переглядайте новини та 
+                                        ставайте справжніми майстрами програмування!
+                                    </p>
+                                    <div class="courses_item-more">
+                                        More...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses_item swiper-slide">
+                                <div class="courses_item-wrapper courses_item-sec">
+                                    <div class="courses_item-text background__text color-sec">Hero</div>
+                                    <div class="courses_item-icon">
+                                        <img src="img/svg/c-dash.svg" alt="ITifico-courses">
+                                    </div>
+                                    <h4 class="courses_item-title title_h4">C# від нуля до героя</h4>
+                                    <p class="courses_item-desc">
+                                        Навчаємо веб програмування, створення ігор та розробки ПЗ.
+                                        Проходьте курси, вирішуйте завдання, переглядайте новини та 
+                                        ставайте справжніми майстрами програмування!
+                                    </p>
+                                    <div class="courses_item-more">
+                                        More...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses_item swiper-slide">
+                                <div class="courses_item-wrapper courses_item-first">
+                                    <div class="courses_item-text background__text color_first">Hero</div>
+                                    <div class="courses_item-icon">
+                                        <img src="img/svg/new-course.svg" alt="ITifico-courses">
+                                    </div>
+                                    <h4 class="courses_item-title title_h4">C# від нуля до героя</h4>
+                                    <p class="courses_item-desc">
+                                        Навчаємо веб програмування, створення ігор та розробки ПЗ.
+                                        Проходьте курси, вирішуйте завдання, переглядайте новини та 
+                                        ставайте справжніми майстрами програмування!
+                                    </p>
+                                    <div class="courses_item-more">
+                                        More...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+
+                        <div class="button-next _icon-arrow-left"></div>
+                        <div class="button-prev _icon-arrow-right"></div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="advantages">
+                <div class="wrapper">
+                    <h2 class="title_advantage title">Why is prog<span class="rectangle rectangle-left">ram</span>ming so <span class="rectangle-xs rectangle-left-xs">cool</span>?</h2>
+                    <div class="advantages_wrapper">
+                        <div class="advantages_item">
+                            <div class="advantages_item-wrapper">
+                                <div class="advanteges__item-image">
+                                    <img src="img/plus-list-1.png" alt="">
+                                </div>
+                                <p class="advantages__item-desc">
+                                    Ви можете реалізовувати свої ідеї за допомогою коду
+                                </p>
+                            </div>
+                        </div>
+                        <div class="advantages_item">
+                            <div class="advantages_item-wrapper">
+                                <div class="advanteges__item-image">
+                                    <img src="img/plus-list-2.png" alt="">
+                                </div>
+                                <p class="advantages__item-desc">
+                                    Ви можете реалізовувати свої ідеї за допомогою коду за допомогою коду за допомогою коду
+                                </p>
+                            </div>
+                        </div>
+                        <div class="advantages_item">
+                            <div class="advantages_item-wrapper">
+                                <div class="advanteges__item-image">
+                                    <img src="img/plus-list-3.png" alt="">
+                                </div>
+                                <p class="advantages__item-desc">
+                                    Ви можете реалізовувати свої ідеї за допомогою коду
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="newsletter">
+                <div class="background_newsletter">
+                    <img class="background_newsletter-left" src="img/svg/background_newsletter-left.svg" alt="">
+                    <img class="background_newsletter-right" src="img/svg/background_newsletter-right.svg" alt="">
+                </div>
+                <div class="wrapper">
+                    <div class="newsletter_wrapper">
+                        <h2 class="title title_newsletter">
+                            Programming has never been <span class="rectangle rectangle-left">so easy</span>!
+                        </h2>
+                        <p class="newsletter_desc">
+                            Не хочете пропускати жодних новин, тоді підпишіться на нашу розсилку.
                         </p>
-                        <button class="intro__button btn-red ">Call to action <span class="_icon-arrow-right"></span></button>
-                        <!-- <div class="intro__to-bottom">
-                            <img src="img/svg/mouse.svg" alt="ITifico-to-next">
-                                <span>Гортай вниз</span> 
-                        </div> -->
-                    </div>
-                    <div class="intro__image">
-                        <img src="img/intro-img.png" alt="ITifico" >
-                        <button class="intro__button btn-red ">Call to action </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="articles">
-            <div class="background_articles">
-                <img src="img/svg/second-section-figure.svg" alt="">
-            </div>
-            <div class="wrapper">
-                <div class="title__section">
-                    <h2 class="title"><span class="rectangle rectangle-left">Arti</span>cles</h2>
-                    <button class="btn-articles btn-outline">More articles</button>
-                </div>
-                <div class="slider__articles slider__slider swiper">
-                    <div class="slider__wrapper swiper-wrapper">
-                    <!-- @import "blog-item.html" -->
-                    </div>
-                    <div class="swiper-pagination"></div>
-
-                    <div class="button-next _icon-arrow-left"></div>
-                    <div class="button-prev _icon-arrow-right"></div>
-                    
-                </div>
-            </div>
-        </section>
-        <section class="courses">
-            <div class="background_courses">
-                <img class="background_courses-left" src="img/svg/background-courses-left.svg" alt="">
-                <img class="background_courses-right" src="img/svg/background-courses-right.svg" alt="">
-            </div>
-            <div class="wrapper">
-                <div class="title__section">
-                    <h2 class="title title_courses"><span class="rectangle rectangle-left">Cour</span>ses</h2>
-                    <button class="btn-articles btn-outline">More courses</button>
-                </div>
-                <div class="slider__courses slider__slider swiper">
-                    <div class="slider__wrapper swiper-wrapper">
-                        <div class="courses_item swiper-slide">
-                            <div class="courses_item-wrapper courses_item-first">
-                                <div class="courses_item-text background__text color-first">Hero</div>
-                                <div class="courses_item-icon">
-                                    <img src="img/svg/c-dash.svg" alt="ITifico-courses">
-                                </div>
-                                <h4 class="courses_item-title title_h4">C# від нуля до героя</h4>
-                                <p class="courses_item-desc">
-                                    Навчаємо веб програмування, створення ігор та розробки ПЗ.
-                                    Проходьте курси, вирішуйте завдання, переглядайте новини та 
-                                    ставайте справжніми майстрами програмування!
-                                </p>
-                                <div class="courses_item-more">
-                                    More...
-                                </div>
+                        <form action="" class="newsletter_form" id="newsletterForm">
+                            <div class="newsletter_input newsletter_input-name">
+                                <input type="text" name="name" class="newletter_field" placeholder="Full name">
                             </div>
-                        </div>
-                        <div class="courses_item swiper-slide">
-                            <div class="courses_item-wrapper courses_item-sec">
-                                <div class="courses_item-text  background__text color-sec">new</div>
-                                <div class="courses_item-icon">
-                                    <img src="img/svg/new-course.svg" alt="ITifico-courses">
-                                </div>
-                                <h4 class="courses_item-title title_h4">C# від нуля до героя</h4>
-                                <p class="courses_item-desc">
-                                    Навчаємо веб програмування, створення ігор та розробки ПЗ.
-                                    Проходьте курси, вирішуйте завдання, переглядайте новини та 
-                                    ставайте справжніми майстрами програмування!
-                                </p>
-                                <div class="courses_item-more">
-                                    More...
-                                </div>
+                            <div class="newsletter_input newsletter_input-mail">
+                                <input type="email" name="email" class="newletter_field" placeholder="your email">
                             </div>
-                        </div>
-                        <div class="courses_item swiper-slide">
-                            <div class="courses_item-wrapper courses_item-third">
-                                <div class="courses_item-text background__text color-third">IT</div>
-                                <div class="courses_item-icon">
-                                    <img src="img/svg/c-dash.svg" alt="ITifico-courses">
-                                </div>
-                                <h4 class="courses_item-title title_h4">C# від нуля до героя</h4>
-                                <p class="courses_item-desc">
-                                    Навчаємо веб програмування, створення ігор та розробки ПЗ.
-                                    Проходьте курси, вирішуйте завдання, переглядайте новини та 
-                                    ставайте справжніми майстрами програмування!
-                                </p>
-                                <div class="courses_item-more">
-                                    More...
-                                </div>
-                            </div>
-                        </div>
-                        <div class="courses_item swiper-slide">
-                            <div class="courses_item-wrapper courses_item-first">
-                                <div class="courses_item-text background__text color-first">Hero</div>
-                                <div class="courses_item-icon">
-                                    <img src="img/svg/new-course.svg" alt="ITifico-courses">
-                                </div>
-                                <h4 class="courses_item-title title_h4">C# від нуля до героя</h4>
-                                <p class="courses_item-desc">
-                                    Навчаємо веб програмування, створення ігор та розробки ПЗ.
-                                    Проходьте курси, вирішуйте завдання, переглядайте новини та 
-                                    ставайте справжніми майстрами програмування!
-                                </p>
-                                <div class="courses_item-more">
-                                    More...
-                                </div>
-                            </div>
-                        </div>
-                        <div class="courses_item swiper-slide">
-                            <div class="courses_item-wrapper courses_item-sec">
-                                <div class="courses_item-text background__text color-sec">Hero</div>
-                                <div class="courses_item-icon">
-                                    <img src="img/svg/c-dash.svg" alt="ITifico-courses">
-                                </div>
-                                <h4 class="courses_item-title title_h4">C# від нуля до героя</h4>
-                                <p class="courses_item-desc">
-                                    Навчаємо веб програмування, створення ігор та розробки ПЗ.
-                                    Проходьте курси, вирішуйте завдання, переглядайте новини та 
-                                    ставайте справжніми майстрами програмування!
-                                </p>
-                                <div class="courses_item-more">
-                                    More...
-                                </div>
-                            </div>
-                        </div>
-                        <div class="courses_item swiper-slide">
-                            <div class="courses_item-wrapper courses_item-first">
-                                <div class="courses_item-text background__text color_first">Hero</div>
-                                <div class="courses_item-icon">
-                                    <img src="img/svg/new-course.svg" alt="ITifico-courses">
-                                </div>
-                                <h4 class="courses_item-title title_h4">C# від нуля до героя</h4>
-                                <p class="courses_item-desc">
-                                    Навчаємо веб програмування, створення ігор та розробки ПЗ.
-                                    Проходьте курси, вирішуйте завдання, переглядайте новини та 
-                                    ставайте справжніми майстрами програмування!
-                                </p>
-                                <div class="courses_item-more">
-                                    More...
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-
-                    <div class="button-next _icon-arrow-left"></div>
-                    <div class="button-prev _icon-arrow-right"></div>
-                    
-                </div>
-            </div>
-        </section>
-        <section class="advantages">
-            <div class="wrapper">
-                <h2 class="title_advantage title">Why is prog<span class="rectangle rectangle-left">ram</span>ming so <span class="rectangle-xs rectangle-left-xs">cool</span>?</h2>
-                <div class="advantages_wrapper">
-                    <div class="advantages_item">
-                        <div class="advantages_item-wrapper">
-                            <div class="advanteges__item-image">
-                                <img src="img/plus-list-1.png" alt="">
-                            </div>
-                            <p class="advantages__item-desc">
-                                Ви можете реалізовувати свої ідеї за допомогою коду
-                            </p>
-                        </div>
-                    </div>
-                    <div class="advantages_item">
-                        <div class="advantages_item-wrapper">
-                            <div class="advanteges__item-image">
-                                <img src="img/plus-list-2.png" alt="">
-                            </div>
-                            <p class="advantages__item-desc">
-                                Ви можете реалізовувати свої ідеї за допомогою коду за допомогою коду за допомогою коду
-                            </p>
-                        </div>
-                    </div>
-                    <div class="advantages_item">
-                        <div class="advantages_item-wrapper">
-                            <div class="advanteges__item-image">
-                                <img src="img/plus-list-3.png" alt="">
-                            </div>
-                            <p class="advantages__item-desc">
-                                Ви можете реалізовувати свої ідеї за допомогою коду
-                            </p>
-                        </div>
+                            <button class="newsletter_btn btn-red"> Subscribe</button>
+                        </form>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="newsletter">
-            <div class="background_newsletter">
-                <img class="background_newsletter-left" src="img/svg/background_newsletter-left.svg" alt="">
-                <img class="background_newsletter-right" src="img/svg/background_newsletter-right.svg" alt="">
-            </div>
-            <div class="wrapper">
-                <div class="newsletter_wrapper">
-                    <h2 class="title title_newsletter">
-                        Programming has never been <span class="rectangle rectangle-left">so easy</span>!
-                    </h2>
-                    <p class="newsletter_desc">
-                        Не хочете пропускати жодних новин, тоді підпишіться на нашу розсилку.
-                    </p>
-                    <form action="" class="newsletter_form" id="newsletterForm">
-                        <div class="newsletter_input newsletter_input-name">
-                            <input type="text" name="name" class="newletter_field" placeholder="Full name">
-                        </div>
-                        <div class="newsletter_input newsletter_input-mail">
-                            <input type="email" name="email" class="newletter_field" placeholder="your email">
-                        </div>
-                        <button class="newsletter_btn btn-red"> Subscribe</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-<!-- @import "footer.html" -->
+            </section>
+        </main>
+        
+        <!-- @import "footer.html" -->
+    </div>
 <script src="swiper@8.2.2/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
