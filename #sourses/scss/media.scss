@@ -92,6 +92,7 @@
             top: -40px;
         }
     }
+    
 }
 @media screen and (max-width: $md2) {
     .backgroud-intro {
@@ -123,7 +124,18 @@
     .blog_wrapper {
         grid-template-columns: repeat(3, 1fr);
     }
-
+// article page
+.content-section-article {
+       
+    .article {
+        flex: 4 4 5%;
+        width: 100%;
+    }
+    .aside {
+        flex: 4 4 5%;
+        width: 100%;
+    }
+}
 } 
 
 @media screen and (max-width: 972px) {

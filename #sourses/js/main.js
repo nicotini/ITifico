@@ -129,5 +129,47 @@ autoplay: {
 dynamicBullets: true,
 
 });
+//slider article page
+const articleSloder = new Swiper('.article_slider', {
+  // Optional parameters
+ loop: true,
+ navigation: {
+  nextEl: '.button-next',
+  prevEl: '.button-prev',
+},
+  // Default parameters
+slidesPerView: 3,
+spaceBetween: 30,
+breakpoints: {
+  // when window width is >= 320px
+  320: {
+    slidesPerView: 1,
+    spaceBetween: 10
+  },
+  // when window width is >= 640px
+  770: {
+    slidesPerView: 2,
+    spaceBetween: 30
+  },
+  992: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+  1200: {
+      slidesPerView: 3,
+      spaceBetween: 30
+  },
+},
+pagination: {
+  el: '.swiper-pagination',
+  clickable: true,
+  
+}, 
+autoplay: {
+  delay: 4000,
+},
+dynamicBullets: true,
+
+});
   
 

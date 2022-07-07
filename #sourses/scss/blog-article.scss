@@ -1,0 +1,148 @@
+.content-section-article {
+    display: flex;
+    flex-wrap: wrap;
+    .article {
+        flex: 3 3 5%;
+        width: 75%;
+    }
+    .aside {
+        flex: 1 1 5%;
+    }
+}
+.article {
+    margin-right: 30px;
+}
+
+.article_info {
+    display: flex;
+    .article_info-date {
+        margin-right: 30px;
+    }
+    margin-bottom: 40px;
+    ._icon-calendar {
+        &::before {
+           color: $Red;
+           
+        }
+    }
+    ._icon-eye {
+        &::before {
+            color: $Red; 
+        }
+    }
+    
+}
+.article_image {
+    margin-bottom: 50px;
+}
+.article_title {
+    margin-bottom: 10px;
+}
+.article_content-list {
+    margin-bottom: 50px;
+    margin-left: 20px;
+    
+    li {
+        margin-bottom: 10px;
+        list-style-type: disc;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.article_content-part {
+    margin-bottom: 50px;
+}
+.article_content-grid-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    margin-bottom: 40px;
+}
+.article_content-grid-three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-bottom: 40px;
+}
+.article_content-quote {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 36px 40px 43px 40px;
+    border-radius: 10px;
+    background-color: #EEF0F3 ;
+   .quote_athor {
+    position: relative;
+    margin-right: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    &::before {
+        content: ' ';
+        width: 3px;
+        height: 40px;
+        background-color: $Red;
+        position: absolute;
+        left:-10px;
+        top: 5px;
+    }
+   }
+   &::before {
+    content: url(../img/svg/left-quote.svg) ;
+    position: absolute;
+    top: -45px;
+    left: 20px;
+
+   }
+}
+.article_content-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 9px 34px 0px #1521381A;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+.social_media {
+    display: flex;
+    a {
+        color: $Red;
+        padding: 12px;
+        width: 40px;
+        height: 40px;
+        transition: .5s all;
+        border-radius: 50%;
+       
+        &:hover {
+          
+            background-color: $Red;
+            color: $White;
+
+        }
+    }
+    p {
+        padding: 12px;
+      /*   margin-right: 30px; */
+    }
+}
+.button_buyMeCoffee {
+    cursor: pointer;
+}
+.aside {
+    .title-article-aside {
+        margin-bottom: 20px;
+    }
+    .tags_blog {
+        margin-bottom: 70px;
+    }
+}
+.article_slider {
+    height: 550px;
+}
+.article_slider-wrapper {
+    width: 100%;
+}
+
