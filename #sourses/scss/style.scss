@@ -84,6 +84,12 @@ img{
     transition: 0.5s all;
     cursor: pointer;
 }
+.title_h3 {
+    font-family: 'Bitter-Bold';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+}
 .title_h4 {
     font-family: "SegoeUI-Bold";
     font-size: 24px;
@@ -532,6 +538,8 @@ main {
 }
 //blog
 @import "blog";
+//blog-article
+@import "blog-article";
 //footer
 @import "footer";
 

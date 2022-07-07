@@ -1,0 +1,5 @@
+.article_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
