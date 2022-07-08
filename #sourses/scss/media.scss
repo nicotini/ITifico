@@ -183,7 +183,7 @@
 }
 @media screen and (max-width: $md3) {
     .title {
-        font-family: Bitter;
+       
         font-size: 40px;
         font-weight: 700;
         line-height: 45px;
@@ -295,6 +295,27 @@
         padding: 50px;
     }
 }
+@media screen and (max-width: 600px) {
+    //blog article
+    .article_content-quote {
+        flex-wrap: wrap;
+        padding: 15px;
+        &::before  {
+            top: 0;
+           left: 70%;
+           right: 0;
+          
+        }
+        .quote_athor {
+            padding-top: 10px;
+            margin-right: 0;
+        }
+    }
+    .quote_item {
+        margin-top: 50px;
+    }
+    
+}
 @media screen and (max-width: $md4) {
     .title {
         font-size: 24px;
@@ -391,6 +412,18 @@
         //blog
         .blog_wrapper {
             grid-template-columns: repeat(1, 1fr);
+        }
+        //blog article
+        .article_content-grid-two {
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 30px;
+        }
+        .article_content-grid-three {
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 30px;
+            img {
+                width: 100%;
+            }
         }
     }
     
