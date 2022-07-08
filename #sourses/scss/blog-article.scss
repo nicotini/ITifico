@@ -68,17 +68,20 @@
 .article_content-quote {
     position: relative;
     display: flex;
+    
     align-items: center;
     margin-bottom: 50px;
     padding: 36px 40px 43px 40px;
     border-radius: 10px;
     background-color: #EEF0F3 ;
+    
    .quote_athor {
     position: relative;
     margin-right: 40px;
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
+    
     &::before {
         content: ' ';
         width: 3px;
